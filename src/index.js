@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // auth
     // import setAuthToken from './utils/setAuthToken';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.js';
 // router
 import { Router } from 'react-router-dom';
 // redux
