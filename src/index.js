@@ -13,6 +13,7 @@ import thunk from 'redux-thunk';
 //reducer
 import errorReducer from './store/reducers/errorReducer';
 import successReducer from './store/reducers/successReducer';
+import facebookReducer from './store/reducers/facebookReducer';
 //plugins
 import moment from 'moment';
 import Moment from 'react-moment';
@@ -32,7 +33,8 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 // root reducer
 const rootReducer = combineReducers({
     errors: errorReducer,
-    success: successReducer
+    success: successReducer,
+    facebook: facebookReducer
 })
 // create store redux 
 const store = createStore(rootReducer, composeEnhancers(

@@ -5,6 +5,7 @@ import PublicLayout from './Layouts/PublicLayout';
 
 import Home from './Home';
 import NotFound from './NotFound';
+import Facebook from './Facebook'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
       <div>
         <Switch>
           <AppRoute exact path="/" layout={PublicLayout} component={Home}/>
+          <AppRoute path="/facebook" layout={PublicLayout} component={Facebook}/>
           <AppRoute layout={PublicLayout} component={NotFound} />
         </Switch>
       </div>

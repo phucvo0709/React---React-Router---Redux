@@ -1,0 +1,3 @@
+export {
+    responsiveFacebook
+} from './facebookActions'
